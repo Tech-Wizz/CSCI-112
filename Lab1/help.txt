@@ -1,0 +1,21 @@
+#include <math.h>
+
+int Separate(int n) {
+
+	...
+	while(...)
+		int no zeros = (int)log10((double)n);\
+		int ldigit = (intn/pow(10.0,(double)no_zeros);
+		// 12345/10000 = 1
+		// add up
+		//print ldigit +
+		n = n - (ldigits * pow(10.0,(double)no_zeros);
+		//n = 12345 - 10000 = 2345;
+	//end while loop
+	// OR fmod(n,10);
+	printf("%d", n%10)
+
+
+int main(void) {
+	// read in num with scanf
+	sum = Seperate(num);

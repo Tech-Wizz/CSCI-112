@@ -1,0 +1,13 @@
+vi ec.c
+#inclue <studio.h>
+
+//Mary Ann Cum, first program
+
+int main(void) {
+
+	print("Hello World\n");
+
+	return(0);
+}
+
+cp /public/vimrc .vimrc
