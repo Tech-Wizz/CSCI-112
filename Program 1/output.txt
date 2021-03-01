@@ -1,0 +1,6 @@
+Class A had 128 networks
+Largest A network is 3441 with 1 host
+Class B had 929 networks
+Largest B network is 0 with 4199319 host
+Class C had 464 networks
+Largest C network is 1 with 1602861576 host
