@@ -6,6 +6,9 @@
 using namespace std;
 
 #include "UClass.h"
+#include "Biob.h"
+#include "Csci.h"
+#include "Egen.h"
 
 class Semester {
 public:

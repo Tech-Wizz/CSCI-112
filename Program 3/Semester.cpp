@@ -11,6 +11,8 @@ void Semester::Read(ifstream& ifs) {
 		one_class.SetFromCsvLine(line);
 		ucs.push_back(one_class);
 	}
+	UClass uc;
+	//uc.Sort();
 }
 
 void Semester::Print() {	
@@ -20,17 +22,48 @@ void Semester::Print() {
 }
 
 void Semester::Type(string t){
+
+	Engineering en;
+	Computer cs;
+	Biology bi;
+
 	for (UClass uc : ucs) {
-		if (uc.Type().compare(t) == 0){
-			uc.Print();
+		if (t.compare("EGEN") == 0){
+			if (uc.Type().compare(t) == 0){
+				en.Print(uc.Type(), uc.Professor(), uc.Title(), uc.Number());
+			}
+		}else if (t.compare("CSCI") == 0){
+			if (uc.Type().compare(t) == 0){
+				cs.Print(uc.Type(), uc.Professor(), uc.Title(), uc.Number());
+			}
+		}else if (t.compare("BIOB") == 0){
+			if (uc.Type().compare(t) == 0){
+				bi.Print(uc.Type(), uc.Professor(), uc.Title(), uc.Number());
+			}
 		}
 	}
 }
 
 void Semester::Number(string t, string n){
+
+	Engineering en;
+	Computer cs;
+	Biology bi;
+
 	for (UClass uc : ucs) {
-		if ((uc.Type().compare(t) == 0) && (uc.Number().compare(n) == 0)){
-			uc.Print();
+		if (t.compare("EGEN") == 0){
+			if ((uc.Type().compare(t) == 0) && (uc.Number().compare(n) == 0)){
+				en.Print(uc.Type(), uc.Professor(), uc.Title(), uc.Number());
+			}
+		}else if (t.compare("CSCI") == 0){
+			if ((uc.Type().compare(t) == 0) && (uc.Number().compare(n) == 0)){
+				cs.Print(uc.Type(), uc.Professor(), uc.Title(), uc.Number());
+			}
+		}else if (t.compare("BIOB") == 0){
+			if ((uc.Type().compare(t) == 0) && (uc.Number().compare(n) == 0)){
+				bi.Print(uc.Type(), uc.Professor(), uc.Title(), uc.Number());
+			}
 		}
+
 	}
 }

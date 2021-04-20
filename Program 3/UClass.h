@@ -19,5 +19,7 @@ protected:
 	string cnum;
 	string ctitle;
 	string prof;
+private:
+	//vector<Engineering> egen;
 };
 #endif /* UCLASS_H */

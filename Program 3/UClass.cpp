@@ -13,6 +13,9 @@ void UClass::SetFromCsvLine(string inpl) {
 	//get class number/id
 	getline(line, cnum, ',');
 
+	//get class title
+	getline(line, ctitle, ',');
+
 	//get professor's name
 	getline(line, prof, ',');
 }
@@ -21,3 +24,7 @@ void UClass::Print() {
 	cout << type << "-" << cnum << "-" << ctitle << "-" << prof << endl;
 }
 
+//void UClass::Sort() {
+//	if (type.compare(EGEN) == 0){
+//		Engineering.Set(type, cnum, ctitle, prof);
+//	}

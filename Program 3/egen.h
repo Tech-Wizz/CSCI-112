@@ -2,11 +2,11 @@
 #define ENGINEERING_H
 #include <iostream>
 using namespace std;
-#include "Uclass.h"
+#include "UClass.h"
 
-class Engineering : public Class {
+class Engineering {
 public:
-	Engineering(Uclass&);
-	void Print();
+	//Engineering(UClass&);
+	void Print(string, string, string, string);
 };
 #endif

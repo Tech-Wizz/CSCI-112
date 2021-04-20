@@ -13,6 +13,6 @@ int main(void) {
 
 	s.Read(ifs);
 	userIn(s);
-	s.Print();
+	//s.Print();
 	return(0);
 }

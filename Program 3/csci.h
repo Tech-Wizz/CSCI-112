@@ -2,12 +2,12 @@
 #define COMPUTER_H
 #include <iostream>
 using namespace std;
-#include "Uclass.h"
+#include "UClass.h"
 
-class Computer : public Class {
+class Computer {
 public:
-	Computer(Uclass&);
-	void Print();
+	//Computer(UClass&);
+	void Print(string, string, string, string);
 };
 #endif
 

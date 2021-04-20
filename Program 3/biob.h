@@ -2,12 +2,12 @@
 #define BIOLOGY_H
 #include <iostream>
 using namespace std;
-#include "Uclass.h"
+#include "UClass.h"
 
-class Biology : public Class {
+class Biology {
 public:
-	Biology(Uclass&);
-	void Print();
+	//Biology(UClass&);
+	void Print(string, string, string, string);
 };
 #endif
 
