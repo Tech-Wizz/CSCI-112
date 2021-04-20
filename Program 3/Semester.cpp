@@ -4,7 +4,7 @@
 using namespace std;
 #include "Semester.h"
 
-void Semester::Read(ifstream& ifs) {
+void Semester::Read(ifstream& ifs) {//reads in the infomation from the file 
 	string line;
 	while (getline(ifs, line)) {
 		UClass one_class;
@@ -12,16 +12,15 @@ void Semester::Read(ifstream& ifs) {
 		ucs.push_back(one_class);
 	}
 	UClass uc;
-	//uc.Sort();
 }
 
-void Semester::Print() {	
+void Semester::Print() {//prints all 	
 	for (UClass uc : ucs) {
 		uc.Print();
 	}
 }
 
-void Semester::Type(string t){
+void Semester::Type(string t){//prints all of one type
 
 	Engineering en;
 	Computer cs;
@@ -44,7 +43,7 @@ void Semester::Type(string t){
 	}
 }
 
-void Semester::Number(string t, string n){
+void Semester::Number(string t, string n){//prints a matching type and Number
 
 	Engineering en;
 	Computer cs;

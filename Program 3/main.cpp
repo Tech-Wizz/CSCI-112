@@ -9,10 +9,9 @@ void userIn(Semester);
 
 int main(void) {
 	Semester s;
+	//reads in the file
 	ifstream ifs {"/public/pgm3/classes.csv"};
-
 	s.Read(ifs);
 	userIn(s);
-	//s.Print();
 	return(0);
 }

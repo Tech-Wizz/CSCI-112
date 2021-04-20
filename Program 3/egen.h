@@ -6,7 +6,6 @@ using namespace std;
 
 class Engineering {
 public:
-	//Engineering(UClass&);
 	void Print(string, string, string, string);
 };
 #endif

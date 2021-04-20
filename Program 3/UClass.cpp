@@ -24,7 +24,3 @@ void UClass::Print() {
 	cout << type << "-" << cnum << "-" << ctitle << "-" << prof << endl;
 }
 
-//void UClass::Sort() {
-//	if (type.compare(EGEN) == 0){
-//		Engineering.Set(type, cnum, ctitle, prof);
-//	}

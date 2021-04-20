@@ -6,7 +6,6 @@ using namespace std;
 
 class Computer {
 public:
-	//Computer(UClass&);
 	void Print(string, string, string, string);
 };
 #endif
